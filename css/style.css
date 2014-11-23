@@ -1,90 +1,105 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 
-html * {
+html {
 	font-family: 'Quicksand', sans-serif;
 }
 
+body {
+	margin: 0;
+}
+
 header {
-	/* padding: 1em 0 1em 0; */
 	background-color: #1D295D;
 }
-	header a {
+
+.header-logo nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-nav {
+	
+}
+	.header-nav a:link, .header-nav a:visited {
+		color: white;
 		text-decoration: none;
 	}
-	header a:link, header a:visited {
-		color: white;
-	}
-	header a:hover {
+	.header-nav a:hover {
 		color: orange;
 	}
 
-
-
-.logo_bar {
-	display: flex;
-	justify-content: space-between;
+main > *, header > * > *, footer > * {
+	max-width: 100em;
+	margin: auto;
+	width: 100%;
 }
 
-.nav_bar {
-	display: flex;
-	justify-content: space-between;
-	padding: 0.5em 0 0em 0;
-}
-
-.logo {
-	width: 200px;
+.carousel img {
+	width: 100%;
 	height: auto;
 }
 
-.main_nav {
-
+.news-events {
+	display: flex;
+	background-color: gainsboro;
 }
-
-.user_nav {
-	font-size: 0.8em;
-}
-
-.carousel-caption {
-	text-align: left;
-	background-color: rgba(10,10,10,0.3);
-}
-
-main > div {
-	overflow: auto;
-}
+	.news-events .news {
+		flex: 8 1 auto;
+	}
+	.news-events .events {
+		flex: 0 1 15em;
+	}
+	.news-events .news-events-header {
+		margin: 0;
+		font-size: 1.8em;
+	}
 
 .news {
-	background-color: #5F8498;
+	display: flex;
 }
+	.news .news-highlights {
+		flex: 2 1 auto;
+	}
+	.news .news-more {
+		flex: 0 1 15m;
+	}
+
+.news-stories {
+	display: flex;
+	justify-content: space-between;
+}
+	.news-stories .news-story {
+		width: 10em;
+	}
+		.news-story img {
+			width: 100%;
+		}
+		.news-story h2 {
+			font-size: 1em;
+		}
+
+.news-more ul {
+	margin: 0;
+	padding-left: 0.5em;
+	list-style-type: none;
+}
+	.news-more ul li:before {
+		content: "> ";
+	}
 
 .events {
-	background-color: gainsboro;
+	background-color: grey;
 }
 
 footer {
-	display: flex;
-	justify-content: space-between;
-	
-	color: white;
 	background-color: #333333;
+	color: white;
+	overflow: auto;
 }
-	footer a {
-		text-decoration: none;
-	}
 	footer a:link, footer a:visited {
 		color: white;
+		text-decoration: none;
 	}
 	footer a:hover {
 		color: orange;
-	}
-
-.footer_block {
-	width: 10em;
-	flex: 0 0 10em;
-}
-	.footer_block ul {
-		padding: 0;
-	}
-	.footer_block li {
-		list-style: outside none none;
 	}
