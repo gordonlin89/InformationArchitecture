@@ -16,6 +16,55 @@ header > *, main > *, footer > * {
 	margin: auto;
 }
 
+/* Navigation Bar */
+.navigation {
+	display: flex;
+}
+	.navigation .dropdown > a, .navigation > a {
+		display: block;
+		width: 10em;
+		text-align: center;
+	}
+	.navigation .dropdown:hover, .navigation > a:hover {
+		background-color: white;
+		color: black;
+	}
+	.navigation .divider {
+		border-left: 1px solid darkgrey;
+	}
+
+/* Dropdown menus */
+.dropdown:hover > .menu {
+	display: flex;
+}
+
+.dropdown:hover {
+	background-color: white;
+	color: black;
+}
+.dropdown:hover a {
+	color: black;
+}
+
+.menu {
+	position: absolute;
+	display: none;
+	background-color: white;
+}
+	.menu h6 {
+		margin: 0.3em 0 0.3em 0.5em;
+	}
+	.menu a {
+		display: block;
+		padding: 0.5em;
+	}
+	.menu a, .menu a:link, .menu a:visited {
+		color: black;
+	}
+	.menu a:hover {
+		text-decoration: underline;
+	}
+
 /* Header */
 header {
 	padding-top: 1em;
@@ -29,29 +78,37 @@ header {
 		color: orange;
 	}
 
-.header-logo {
+/* Top Header */
+.header-top {
 	padding-bottom: 0.5em;
+	font-size: 0.8em;
 }
 
 .logo {
 	width: 16em;
 	height: auto;
+	vertical-align: text-top
 }
 
-.resources {
+.secondary-nav {
+	display: inline-flex;
+}
+
+.quicklinks {
 	float: right;
 	display: flex;
 }
-	.resources a {
+	.quicklinks a {
 		margin-right: 1em;
 	}
 
-.header-nav {
+/* Bottom Header */
+.header-bottom {
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap-reverse;
+	justify-content: center;
 }
 
+	/*
 .topic-nav {
 	display: flex;
 	min-width: 20em;
@@ -66,9 +123,6 @@ header {
 		padding: 0.5em 1.5em 0.5em 0.5em;
 	}
 	.topic:hover a:hover {
-		/*
-		background-color: royalblue;
-		*/
 		color: black;
 		text-decoration: underline;
 	}
@@ -111,6 +165,8 @@ header {
 		margin-left: 1em;
 		text-align: right;
 	}
+
+*/
 
 /* Footer */
 footer {
