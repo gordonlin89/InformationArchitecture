@@ -59,7 +59,7 @@ header {
 }
 
 .topic {
-	position: relative;
+	
 }
 	.topic > a {
 		display: block;
@@ -86,7 +86,7 @@ header {
 	background-color: white;
 }
 	.menu h6 {
-		margin: 1em 0 0.8em 0.5em;
+		margin: 0.3em 0 0.3em 0.5em;
 	}
 	.menu section {
 		margin: 1em 0 1em 0;
