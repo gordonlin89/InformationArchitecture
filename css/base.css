@@ -66,11 +66,14 @@ header {
 		padding: 0.5em 1.5em 0.5em 0.5em;
 	}
 	.topic:hover a:hover {
+		/*
 		background-color: royalblue;
-		color: white;
+		*/
+		color: black;
+		text-decoration: underline;
 	}
 	.topic:hover > .menu {
-		display: block;
+		display: flex;
 	}
 	.topic:hover a {
 		background-color: white;
@@ -80,14 +83,18 @@ header {
 .menu {
 	position: absolute;
 	display: none;
-	
-	background-color: ghostwhite;
-	/*
-	background-color: #1D295D;
-	box-shadow: 1px 1px 1px #1D295D;
-	border-top: 1px solid white;
-	*/
+	background-color: white;
 }
+	.menu h6 {
+		margin: 1em 0 0.8em 0.5em;
+	}
+	.menu section {
+		margin: 1em 0 1em 0;
+		padding: 0 1em 0 1em;
+	}
+	.menu section:first-child + section {
+		border-left: 1px solid black;
+	}
 	.menu a {
 		display: block;
 		padding: 0.5em;
@@ -95,11 +102,6 @@ header {
 	.menu a:link, .menu a:visited {
 		color: black;
 	}
-	/*
-	.menu a:hover {
-		background-color: royalblue;
-		color: black;
-	}*/
 
 .user-nav {
 	padding-top: 0.8em;
