@@ -2,6 +2,14 @@ article h1 {
 	font-size: 2em;
 }
 
+article > p {
+	font-size: 1.6em;
+}
+
+.facts h2 {
+	margin-top: 0;
+}
+
 .content {
 	display: flex;
 	justify-content: space-between;

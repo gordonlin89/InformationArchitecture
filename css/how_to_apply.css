@@ -7,3 +7,8 @@ a.apply-link {
 }
 a.apply-link:link, a.apply-link:visited {
 }
+
+section img {
+	float: right;
+	margin-left: 2em;
+}
