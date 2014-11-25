@@ -20,9 +20,11 @@ header > *, main > *, footer > * {
 .navigation {
 	display: flex;
 }
+	.navigation > * {
+		width: 10em;
+	}
 	.navigation .dropdown > a, .navigation > a {
 		display: block;
-		width: 10em;
 		text-align: center;
 	}
 	.navigation .dropdown:hover, .navigation > a:hover {
@@ -82,7 +84,14 @@ header {
 .header-top {
 	padding-bottom: 0.5em;
 	font-size: 0.8em;
+	
+	display:flex;
 }
+	.header-top .top-nav {
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+	}
 
 .logo {
 	width: 16em;
