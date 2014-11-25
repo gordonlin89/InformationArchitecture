@@ -4,29 +4,96 @@
 	<meta charset="UTF-8"/>
 	<title>University of Leicester</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/frontpage.css"/>
 </head>
 <body>
 	<header>
-		<div class="header-logo">
+		<div class="header-top">
 			<img class="logo" src="img/logo-white.png"/>
-			<nav class="accelerator">
-				<ul class="accelerator-links">
-					<li><a href="">Campus Map</a></li>
-					<li><a href="">Directory</a></li>
-				</ul>
-				<form>
-					<input type="text">
-					<button type="submit">Search</button>
-				</form>
-			</nav>
+			<div class="top-nav">
+				<nav class="navigation secondary-nav"></nav>
+				<nav class="quicklinks">
+					<a href="">Campus Map</a>
+					<a href="">Directory</a>
+					<form>
+						<input type="text">
+						<button type="submit">Search</button>
+					</form>
+				</nav>
+			</div>
 		</div>
-		<div class="header-nav">
-			<nav class="topic-nav">
-				<a href="Admissions.html">Admissions</a>
-				<a href="">Academics</a>
-				<a href="">Research</a>
-				<a href="">Campus</a>
+		<div class="header-bottom">
+			<nav class="navigation topic-nav">
+				<div class="dropdown">
+					<a href="Admissions.html">Admissions</a>
+					<div class="menu">
+						<section>
+							<a href="">Undergraduate</a>
+							<a href="">Graduate</a>
+							<a href="">Transfer</a>
+							<a href="">International</a>
+							<a href="">Summer</a>
+						</section>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="">Academics</a>
+					<div class="menu">
+						<section>
+							<h6>Programs</h6>
+							<a href="">Undergraduate Degrees</a>
+							<a href="">Graduate Degrees</a>
+							<a href="">Extension Programs</a>
+						</section>
+						<section>
+							<h6>Schools</h6>
+							<a href="">College of Letters and Sciences</a>
+							<a href="">School of Engineering</a>
+							<a href="">School of Medicine</a>
+						</section>
+						<section>
+							<h6>Information</h6>
+							<a href="">Academic Schedule</a>
+							<a href="">Courses</a>
+							<a href="">Schedule of Classes</a>
+						</section>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="">Research</a>
+					<div class="menu">
+						<section>
+							<a href="">Research Vision</a>
+							<a href="">Facilities and Laboratories</a>
+							<a href="">Departments</a>
+							<a href="">Apply</a>
+						</section>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="">Campus</a>
+					<div class="menu">
+						<section>
+							<h6>Places</h6>
+							<a href="">Library</a>
+							<a href="">University Center</a>
+							<a href="">Career Center</a>
+							<a href="">Student Center</a>
+						</section>
+						<section>
+							<h6>Campus Life</h6>
+							<a href="">Events</a>
+							<a href="">Student Organizations</a>
+							<a href="">Public Programs</a>
+						</section>
+						<section>
+							<h6>Visiting Campus</h6>
+							<a href="">Tours</a>
+							<a href="">Directions</a>
+						</section>
+					</div>
+				</div>
 			</nav>
 			<nav class="user-nav">
 				<a href="">Students</a>
@@ -38,13 +105,20 @@
 	</header>
 	<main>
 		<div class="carousel">
-			<img src="img/banner-swu-new.jpg"/>
-			<div class="thing">
-				<h1>Study with Us!</h1>
+			<div class="citem">
+				<img src="img/banner-swu-new.jpg"/>
+				<div class="thing">
+					<h1>
+						<a href="">Apply to Study!</a>
+					</h1>
+					<p>Learn more about our application process.</p>
+				</div>
 			</div>
 		</div>
 		<div class="news">
-			<h1>News</h1>
+			<h1>
+				<a href="">News</a>
+			</h1>
 			<hr/>
 			<div class="stories">
 				<section class="story">
@@ -70,14 +144,6 @@
 						<li><a href="">things happened</a></li>
 					</ul>
 				</section>
-			</div>
-		</div>
-		<div class="events">
-			<h1 class="news-events-header">Events</h1>
-			<hr/>
-			<div class="event">
-				<a href="">Interdisciplinary Science Research Lecture</a>
-				<span class="time">11:45am</span>
 			</div>
 		</div>
 	</main>
@@ -107,8 +173,8 @@
 			<div class="index-group">
 				<h2>Help</h2>
 				<ul>
-					<li><a href="">Directory</a></li>
-					<li><a href="">Map</a></li>
+					<li><a href="">Emergency</a></li>
+					<li><a href="">IT Support</a></li>
 					<li><a href="">asdf</a></li>
 				</ul>
 			</div>
