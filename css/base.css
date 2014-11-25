@@ -25,15 +25,9 @@ header > *, main > *, footer > * {
 		display: block;
 		text-align: center;
 	}
-	/*
-	.navigation .dropdown:hover, .navigation > a:hover {
-		background-color: white;
-		color: black;
+	.navigation a.active{
+		text-decoration: underline;;
 	}
-	.navigation .divider {
-		border-left: 1px solid darkgrey;
-	}
-	*/
 
 /* Dropdown menus */
 .dropdown {
@@ -95,10 +89,10 @@ header {
 		display: flex;
 		justify-content: space-between;
 	}
-	.header-top .secondary-nav .dropdown > a {
+	.header-top .secondary-nav .dropdown > a, .header-top .secondary-nav > a {
 		padding: 0em 1.5em 0em 0em;
 	}
-	.header-top .secondary-nav .dropdown  {
+	.header-top .secondary-nav {
 		margin-left: 1em;
 	}
 
@@ -141,9 +135,6 @@ header {
 .topic-nav {
 	font-weight: 500;
 }
-	.topic-nav a.active{
-		text-decoration: underline;;
-	}
 
 .topic-nav > * {
 	padding: 0.5em 1.5em 0em 0em;
