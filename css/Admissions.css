@@ -44,7 +44,8 @@ article > p {
 	}
 
 .right {
-	flex: 0 1 600px;
+	flex: 0 0 500px;
+	margin-left: 2em;
 }
 	.right img {
 		width: 100%;
