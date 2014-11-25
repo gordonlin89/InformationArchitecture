@@ -111,77 +111,32 @@ header {
 .header-bottom {
 	display: flex;
 	justify-content: space-between;
+	
+	font-size: 1.1em;
 }
 	.header-bottom .topic-nav .dropdown > a {
-		padding: 0.5em 1.5em 0.5em 1em;
+		padding: 0.5em 0em 0.5em 0em;
+		width: 8em;
+		text-align: center;
 	}
 	.header-bottom .user-nav {
-		padding-top: 0.5em;
-		font-size: 1em;
+		padding-top: 0.8em;
+		font-size: 0.8em;
 	}
 	.header-bottom .user-nav a {
 		padding-left: 1.5em;
 	}
 
-	/*
-.topic-nav {
-	display: flex;
-	min-width: 20em;
-	font-size: 1.2em;
+/* Breadcrumb */
+.breadcrumb a {
+	text-decoration: none;
 }
-
-.topic {
-	
+.breadcrumb a:link, .breadcrumb a:visited {
+	color: black;
 }
-	.topic > a {
-		display: block;
-		padding: 0.5em 1.5em 0.5em 0.5em;
-	}
-	.topic:hover a:hover {
-		color: black;
-		text-decoration: underline;
-	}
-	.topic:hover > .menu {
-		display: flex;
-	}
-	.topic:hover a {
-		background-color: white;
-		color: black;
-	}
-
-.menu {
-	position: absolute;
-	display: none;
-	background-color: white;
+.breadcrumb a:hover {
+	color: orangered;
 }
-	.menu h6 {
-		margin: 0.3em 0 0.3em 0.5em;
-	}
-	.menu section {
-		margin: 1em 0 1em 0;
-		padding: 0 1em 0 1em;
-	}
-	.menu section:first-child + section {
-		border-left: 1px solid black;
-	}
-	.menu a {
-		display: block;
-		padding: 0.5em;
-	}
-	.menu a:link, .menu a:visited {
-		color: black;
-	}
-
-.user-nav {
-	padding-top: 0.8em;
-	font-size: 1em;
-}
-	.user-nav a {
-		margin-left: 1em;
-		text-align: right;
-	}
-
-*/
 
 /* Footer */
 footer {
