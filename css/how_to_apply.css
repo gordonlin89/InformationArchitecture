@@ -1,0 +1,9 @@
+article h1 {
+	font-size: 2em;
+}
+
+a.apply-link {
+	text-decoration: underline;
+}
+a.apply-link:link, a.apply-link:visited {
+}

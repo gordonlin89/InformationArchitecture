@@ -11,7 +11,7 @@ body {
 }
 
 header > *, main > *, footer > * {
-	max-width: 100em;
+	max-width: 2000px;
 	width: 80%;
 	margin: auto;
 }
@@ -20,10 +20,12 @@ header > *, main > *, footer > * {
 .navigation {
 	display: flex;
 }
+	
 	.navigation .dropdown > a, .navigation > a {
 		display: block;
 		text-align: center;
 	}
+	/*
 	.navigation .dropdown:hover, .navigation > a:hover {
 		background-color: white;
 		color: black;
@@ -31,24 +33,39 @@ header > *, main > *, footer > * {
 	.navigation .divider {
 		border-left: 1px solid darkgrey;
 	}
+	*/
 
 /* Dropdown menus */
+.dropdown {
+	
+}
 .dropdown:hover > .menu {
 	display: flex;
 }
 
+.dropdown:hover > a {
+	text-decoration: underline;
+	color: orange;
+}
+
+/*
 .dropdown:hover {
+	
 	background-color: white;
 	color: black;
+	
 }
 .dropdown:hover a {
-	color: black;
+	text-decoration: underline;
 }
+*/
 
 .menu {
 	position: absolute;
 	display: none;
 	background-color: white;
+	padding: 0.3em 0.7em 0.3em 0.7em;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.35);
 }
 	.menu h6 {
 		margin: 0.3em 0 0.3em 0.5em;
@@ -80,9 +97,9 @@ header {
 /* Top Header */
 .header-top {
 	padding-bottom: 0.5em;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	
-	display:flex;
+	display: flex;
 }
 	.header-top .top-nav {
 		flex: 1;
@@ -90,7 +107,10 @@ header {
 		justify-content: space-between;
 	}
 	.header-top .secondary-nav .dropdown > a {
-		padding: 0em 1.5em 0em 1.2em;
+		padding: 0em 1.5em 0em 0em;
+	}
+	.header-top .secondary-nav .dropdown  {
+		margin-left: 1em;
 	}
 
 .logo {
@@ -112,12 +132,14 @@ header {
 	display: flex;
 	justify-content: space-between;
 	
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 	.header-bottom .topic-nav .dropdown > a {
+	/*
 		padding: 0.5em 0em 0.5em 0em;
 		width: 8em;
 		text-align: center;
+		*/
 	}
 	.header-bottom .user-nav {
 		padding-top: 0.8em;
@@ -127,15 +149,35 @@ header {
 		padding-left: 1.5em;
 	}
 
+.topic-nav {
+	font-weight: 500;
+}
+	.topic-nav a.active{
+		text-decoration: underline;;
+	}
+
+.topic-nav > * {
+	padding: 0.5em 1.5em 0em 0em;
+}
+
+.topic-nav .dropdown > a, .topic-nav > a {
+	margin-bottom: 0.5em;
+}
+
 /* Breadcrumb */
 .breadcrumb a {
 	text-decoration: none;
+	font-weight: bold;
 }
 .breadcrumb a:link, .breadcrumb a:visited {
 	color: black;
 }
 .breadcrumb a:hover {
-	color: orangered;
+	color: seagreen;
+}
+
+main a:hover {
+	color: seagreen;
 }
 
 /* Footer */
