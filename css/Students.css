@@ -38,6 +38,13 @@ img {
 	display: flex;
 	margin-bottom: 1em;
 }
+	.event .pic {
+		flex: 0 0 200px;
+	}
+	.event img {
+		width: 100%;
+		height: auto;
+	}
 	.event .text {
 		margin-left: 1em;
 	}
