@@ -43,9 +43,18 @@
 }
 
 .news h1 a:hover {
-	color: seagreen;
+	color: purple;
 	text-decoration: underline;
 }
+
+.news a:link, .news a:visited {
+		text-decoration: none;
+		color: black;
+	}
+	.news a:hover {
+		text-decoration: underline;
+		color: purple;
+	}
 
 .stories {
 	display: flex;
@@ -68,7 +77,7 @@
 .more-news {
 }
 	.more-news h3 {
-		margin: 0;
+		margin-top: 0;
 		font-size: 1.3em;
 	}
 	.more-news ul {
@@ -77,10 +86,19 @@
 		list-style-type: none;
 	}
 	.more-news li {
-		font-size: 1.3em;
+		margin: 0 0 0.5em 0;
+		font-size: 1em;
 	}
 	.more-news ul li:before {
 		content: "> ";
+	}
+	.more-news a:link, .more-news a:visited {
+		text-decoration: none;
+		color: black;
+	}
+	.more-news a:hover {
+		text-decoration: underline;
+		color: purple;
 	}
 
 /* Events */
