@@ -33,3 +33,14 @@ img {
 	width: 20em;
 	visibility: hidden;
 }
+
+.event {
+	display: flex;
+	margin-bottom: 1em;
+}
+	.event .text {
+		margin-left: 1em;
+	}
+	.event .text h3 {
+		margin-top: 0;
+	}
